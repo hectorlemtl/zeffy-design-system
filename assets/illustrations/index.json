@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0",
+  "items": [
+    { "file": "solution-donations.svg",      "category": "solution", "tags": ["donations", "giving", "form"],         "caption": "Donations — collect one-time and recurring gifts" },
+    { "file": "solution-ticketing.svg",      "category": "solution", "tags": ["tickets", "events"],                   "caption": "Ticketing — sell and manage event tickets" },
+    { "file": "solution-raffles.svg",        "category": "solution", "tags": ["raffle", "lottery"],                   "caption": "Raffles & lotteries" },
+    { "file": "solution-auctions.svg",       "category": "solution", "tags": ["auction", "bidding"],                  "caption": "Auctions — silent and live" },
+    { "file": "solution-memberships.svg",    "category": "solution", "tags": ["membership"],                          "caption": "Memberships" },
+    { "file": "solution-peer-to-peer.svg",   "category": "solution", "tags": ["p2p", "campaigns"],                    "caption": "Peer-to-peer campaigns" },
+    { "file": "solution-online-store.svg",   "category": "solution", "tags": ["store", "ecommerce"],                  "caption": "Online store" },
+    { "file": "solution-tap-to-pay.svg",     "category": "solution", "tags": ["tap-to-pay", "mobile", "in-person"],   "caption": "Tap to Pay app" },
+    { "file": "solution-crm.svg",            "category": "solution", "tags": ["crm", "donor management"],             "caption": "CRM & donor management" },
+    { "file": "solution-newsletter.svg",     "category": "solution", "tags": ["newsletter", "email"],                 "caption": "Newsletter & emails" },
+    { "file": "solution-donor-mail.svg",     "category": "solution", "tags": ["direct mail", "physical"],             "caption": "Donor mail" },
+
+    { "file": "cause-schools.svg",           "category": "cause",    "tags": ["education", "schools"],                "caption": "Schools" },
+    { "file": "cause-sports-teams.svg",      "category": "cause",    "tags": ["sports", "youth"],                     "caption": "Sports teams" },
+    { "file": "cause-animal-rescues.svg",    "category": "cause",    "tags": ["animals", "rescue"],                   "caption": "Animal rescues" },
+    { "file": "cause-churches.svg",          "category": "cause",    "tags": ["faith", "churches"],                   "caption": "Churches" },
+    { "file": "cause-food-banks.svg",        "category": "cause",    "tags": ["food", "humanitarian"],                "caption": "Food banks & aid" },
+    { "file": "cause-fire-departments.svg",  "category": "cause",    "tags": ["volunteer", "fire"],                   "caption": "Volunteer fire departments" },
+    { "file": "cause-arts-culture.svg",      "category": "cause",    "tags": ["arts", "culture"],                     "caption": "Arts & culture" },
+    { "file": "cause-pta.svg",               "category": "cause",    "tags": ["pta", "schools"],                      "caption": "Parent-teacher associations" },
+
+    { "file": "nav-about.svg",               "category": "nav",      "tags": ["about"],                               "caption": "About Us — nav glyph" }
+  ]
+}
