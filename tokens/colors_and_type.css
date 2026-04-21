@@ -1,0 +1,97 @@
+/**
+ * Zeffy — colors + type only.
+ * A focused subset of tokens.css for tools (like Claude Design) that want
+ * a single "foundational" stylesheet with just the brand anchors.
+ * Source of truth: tokens/color.json + tokens/typography.json.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap");
+
+:root {
+  /* Brand anchors */
+  --color-brand-primary:         #5555e7;
+  --color-brand-primary-dark:    #2a2ac4;
+  --color-brand-primary-darkest: #06006d;
+  --color-brand-primary-light:   #bfbfff;
+  --color-brand-primary-quiet:   #f3f3ff;
+  --color-brand-primary-moderate:#e0e0ff;
+  --color-brand-midnight:        #0f0e5b;
+  --color-brand-frozen-blue:     #1b1bb5;
+  --color-brand-heading-ink:     #0a093d;
+
+  /* Accents (use sparingly in UI — primarily illustrations and callouts) */
+  --color-accent-sea-foam-green: #09cfaf;
+  --color-accent-yellow:         #ffe68e;
+  --color-accent-zesty-orange:   #ffb424;
+
+  /* Status */
+  --color-status-success: #068a75;
+  --color-status-warning: #996b16;
+  --color-status-danger:  #ed4a55;
+
+  /* Neutral */
+  --color-neutral-white:   #ffffff;
+  --color-neutral-ghost:   #f8f8fa;
+  --color-neutral-slate-muted: #88979c;
+  --color-neutral-slate-alpha: #10344212;
+
+  /* Semantic surfaces and text */
+  --color-surface-primary:    #ffffff;
+  --color-surface-secondary:  #f3f3ff;
+  --color-surface-muted:      #f8f8fa;
+  --color-surface-brand:      #1b1bb5;
+  --color-surface-brand-deep: #0f0e5b;
+
+  --color-text-primary:   #0f0e5b;
+  --color-text-heading:   #0a093d;
+  --color-text-secondary: #57568c;
+  --color-text-intense:   #2a2ac4;
+  --color-text-inverted:  #ffffff;
+
+  /* Type families */
+  --font-family-heading: "Poppins", Arial, sans-serif;
+  --font-family-body:    "Roboto", Arial, sans-serif;
+
+  /* Type scale */
+  --font-size-xs:       0.75rem;
+  --font-size-regular:  0.875rem;
+  --font-size-medium:   1rem;
+  --font-size-medium-2: 1.125rem;
+  --font-size-lg:       1.25rem;
+  --font-size-xl:       1.5rem;
+  --font-size-2xl:      1.875rem;
+  --font-size-3xl:      2.5rem;
+  --font-size-4xl:      3.375rem;
+  --font-size-5xl:      3.625rem;
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+
+  --line-height-tight:   1.1;
+  --line-height-snug:    1.25;
+  --line-height-normal:  1.5;
+  --line-height-relaxed: 1.65;
+}
+
+/* Default document typography */
+body {
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background: var(--color-surface-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--color-text-heading);
+  line-height: var(--line-height-tight);
+  margin-top: 0;
+}
+
+h1 { font-weight: var(--font-weight-medium);   font-size: var(--font-size-4xl); }
+h2 { font-weight: var(--font-weight-semibold); font-size: var(--font-size-3xl); line-height: var(--line-height-snug); }
+h3 { font-weight: var(--font-weight-medium);   font-size: var(--font-size-2xl); line-height: var(--line-height-snug); }
+h4 { font-weight: var(--font-weight-medium);   font-size: var(--font-size-xl);  line-height: var(--line-height-snug); }

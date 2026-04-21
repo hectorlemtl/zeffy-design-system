@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zeffy — Colors</title>
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; padding: var(--space-xxlarge) var(--space-padding-global); font-family: var(--font-family-body); color: var(--color-text-primary); background: var(--color-surface-primary); }
+    h1 { font-family: var(--font-family-heading); font-weight: 600; font-size: var(--font-size-3xl); color: var(--color-text-heading); }
+    h2 { font-family: var(--font-family-heading); font-weight: 500; font-size: var(--font-size-xl); color: var(--color-text-heading); margin-top: var(--space-xlarge); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-small); }
+    .sw { border: 1px solid var(--color-neutral-slate-alpha); border-radius: var(--radius-12); overflow: hidden; }
+    .sw__chip { height: 72px; }
+    .sw__meta { padding: var(--space-xsmall) var(--space-small); }
+    .sw__name { font-weight: 500; font-size: var(--font-size-regular); }
+    .sw__hex { font-family: ui-monospace, monospace; color: var(--color-text-secondary); font-size: var(--font-size-xs); }
+  </style>
+</head>
+<body>
+<h1>Colors</h1>
+
+<h2>Brand</h2>
+<div class="grid">
+  <div class="sw"><div class="sw__chip" style="background:#5555e7"></div><div class="sw__meta"><div class="sw__name">brand.primary</div><div class="sw__hex">#5555e7</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#2a2ac4"></div><div class="sw__meta"><div class="sw__name">brand.primary-dark</div><div class="sw__hex">#2a2ac4</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#06006d"></div><div class="sw__meta"><div class="sw__name">brand.primary-darkest</div><div class="sw__hex">#06006d</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#bfbfff"></div><div class="sw__meta"><div class="sw__name">brand.primary-light</div><div class="sw__hex">#bfbfff</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#e0e0ff"></div><div class="sw__meta"><div class="sw__name">brand.primary-moderate</div><div class="sw__hex">#e0e0ff</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#f3f3ff"></div><div class="sw__meta"><div class="sw__name">brand.primary-quiet</div><div class="sw__hex">#f3f3ff</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#0f0e5b"></div><div class="sw__meta"><div class="sw__name">brand.midnight-3</div><div class="sw__hex">#0f0e5b</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#1b1bb5"></div><div class="sw__meta"><div class="sw__name">brand.frozen-blue</div><div class="sw__hex">#1b1bb5</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#0a093d"></div><div class="sw__meta"><div class="sw__name">brand.heading-ink</div><div class="sw__hex">#0a093d</div></div></div>
+</div>
+
+<h2>Accent</h2>
+<div class="grid">
+  <div class="sw"><div class="sw__chip" style="background:#09cfaf"></div><div class="sw__meta"><div class="sw__name">accent.sea-foam-green</div><div class="sw__hex">#09cfaf</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#068a75"></div><div class="sw__meta"><div class="sw__name">accent.dark-green</div><div class="sw__hex">#068a75</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#ffe68e"></div><div class="sw__meta"><div class="sw__name">accent.yellow</div><div class="sw__hex">#ffe68e</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#ffb424"></div><div class="sw__meta"><div class="sw__name">accent.zesty-orange</div><div class="sw__hex">#ffb424</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#89b8ff"></div><div class="sw__meta"><div class="sw__name">accent.breezy-blue</div><div class="sw__hex">#89b8ff</div></div></div>
+</div>
+
+<h2>Status</h2>
+<div class="grid">
+  <div class="sw"><div class="sw__chip" style="background:#068a75"></div><div class="sw__meta"><div class="sw__name">status.success</div><div class="sw__hex">#068a75</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#996b16"></div><div class="sw__meta"><div class="sw__name">status.warning</div><div class="sw__hex">#996b16</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#ed4a55"></div><div class="sw__meta"><div class="sw__name">status.danger</div><div class="sw__hex">#ed4a55</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#ff3947"></div><div class="sw__meta"><div class="sw__name">status.danger-strong</div><div class="sw__hex">#ff3947</div></div></div>
+</div>
+
+<h2>Neutral</h2>
+<div class="grid">
+  <div class="sw"><div class="sw__chip" style="background:#ffffff; border: 1px solid #eee;"></div><div class="sw__meta"><div class="sw__name">neutral.white</div><div class="sw__hex">#ffffff</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#f8f8fa"></div><div class="sw__meta"><div class="sw__name">neutral.ghost</div><div class="sw__hex">#f8f8fa</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#88979c"></div><div class="sw__meta"><div class="sw__name">neutral.slate-muted</div><div class="sw__hex">#88979c</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#103442"></div><div class="sw__meta"><div class="sw__name">neutral.slate-strong</div><div class="sw__hex">#103442</div></div></div>
+  <div class="sw"><div class="sw__chip" style="background:#57568c"></div><div class="sw__meta"><div class="sw__name">text.secondary</div><div class="sw__hex">#57568c</div></div></div>
+</div>
+</body>
+</html>

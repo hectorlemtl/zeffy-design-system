@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zeffy — Spacing</title>
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; padding: var(--space-xxlarge) var(--space-padding-global); font-family: var(--font-family-body); color: var(--color-text-primary); background: var(--color-surface-primary); }
+    h1 { font-family: var(--font-family-heading); font-weight: 600; font-size: var(--font-size-3xl); color: var(--color-text-heading); margin-bottom: var(--space-xlarge); }
+    .row { display: grid; grid-template-columns: 10rem 1fr 5rem; gap: var(--space-medium); align-items: center; padding: var(--space-xsmall) 0; border-top: 1px solid var(--color-neutral-slate-alpha); }
+    .name { font-size: var(--font-size-regular); font-weight: 500; }
+    .bar { background: var(--color-brand-primary); height: 16px; border-radius: var(--radius-8); }
+    .value { font-family: ui-monospace, monospace; color: var(--color-text-secondary); font-size: var(--font-size-xs); text-align: right; }
+  </style>
+</head>
+<body>
+<h1>Spacing scale</h1>
+
+<div class="row"><div class="name">tiny</div>    <div class="bar" style="width: 4px"></div>   <div class="value">0.25rem · 4px</div></div>
+<div class="row"><div class="name">xxsmall</div> <div class="bar" style="width: 8px"></div>   <div class="value">0.5rem · 8px</div></div>
+<div class="row"><div class="name">xsmall</div>  <div class="bar" style="width: 12px"></div>  <div class="value">0.75rem · 12px</div></div>
+<div class="row"><div class="name">small</div>   <div class="bar" style="width: 16px"></div>  <div class="value">1rem · 16px</div></div>
+<div class="row"><div class="name">medium</div>  <div class="bar" style="width: 20px"></div>  <div class="value">1.25rem · 20px</div></div>
+<div class="row"><div class="name">large</div>   <div class="bar" style="width: 24px"></div>  <div class="value">1.5rem · 24px</div></div>
+<div class="row"><div class="name">xlarge</div>  <div class="bar" style="width: 32px"></div>  <div class="value">2rem · 32px</div></div>
+<div class="row"><div class="name">xxlarge</div> <div class="bar" style="width: 48px"></div>  <div class="value">3rem · 48px</div></div>
+<div class="row"><div class="name">huge</div>    <div class="bar" style="width: 64px"></div>  <div class="value">4rem · 64px</div></div>
+<div class="row"><div class="name">xhuge</div>   <div class="bar" style="width: 96px"></div>  <div class="value">6rem · 96px</div></div>
+<div class="row"><div class="name">xxhuge</div>  <div class="bar" style="width: 128px"></div> <div class="value">8rem · 128px</div></div>
+</body>
+</html>

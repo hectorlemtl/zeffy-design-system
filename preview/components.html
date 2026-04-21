@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zeffy — Components preview</title>
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; padding: var(--space-xxlarge) var(--space-padding-global); font-family: var(--font-family-body); color: var(--color-text-primary); background: var(--color-surface-muted); }
+    h1 { font-family: var(--font-family-heading); font-weight: 600; font-size: var(--font-size-3xl); color: var(--color-text-heading); margin-bottom: var(--space-xlarge); }
+    h2 { font-family: var(--font-family-heading); font-weight: 500; font-size: var(--font-size-lg); color: var(--color-text-heading); margin: var(--space-xlarge) 0 var(--space-small); }
+    .stage { background: var(--color-surface-primary); border: 1px solid var(--color-neutral-slate-alpha); border-radius: var(--radius-16); padding: var(--space-xlarge); }
+    .row { display: flex; gap: var(--space-small); flex-wrap: wrap; align-items: center; }
+    .btn { display: inline-block; padding: 12px 16px; border-radius: var(--radius-8); font-weight: 500; text-decoration: none; font-size: var(--font-size-medium); }
+    .btn-primary { background: var(--color-brand-primary); color: white; }
+    .btn-outline { background: transparent; color: var(--color-brand-primary-dark); border: 1px solid var(--color-brand-primary-light); }
+    .badge { padding: 4px 10px; border-radius: var(--radius-round); font-size: var(--font-size-xs); font-weight: 500; letter-spacing: var(--letter-spacing-wide); }
+  </style>
+</head>
+<body>
+<h1>Components preview</h1>
+
+<h2>Buttons</h2>
+<div class="stage">
+  <div class="row">
+    <a class="btn btn-primary" href="#">Sign up for free</a>
+    <a class="btn btn-outline" href="#">See how it works</a>
+  </div>
+</div>
+
+<h2>Badges</h2>
+<div class="stage">
+  <div class="row">
+    <span class="badge" style="background:#e0e0ff; color:#2a2ac4">NEW</span>
+    <span class="badge" style="background:#bae5de; color:#068a75">Verified</span>
+    <span class="badge" style="background:#fff2f3; color:#aa262f">Limit exceeded</span>
+  </div>
+</div>
+
+<h2>Callout (final CTA)</h2>
+<div class="stage" style="background: var(--color-surface-brand-deep); color: white; border: 0; text-align: center;">
+  <div style="font-family: var(--font-family-heading); font-weight: 500; font-size: var(--font-size-3xl); line-height: 1.1; margin-bottom: var(--space-small);">Start fundraising — it's free forever</div>
+  <div style="color: var(--color-text-inverted-secondary); margin-bottom: var(--space-large); font-size: var(--font-size-medium-2);">Join 100,000+ nonprofits raising more with zero platform fees.</div>
+  <a class="btn btn-primary" style="padding: 16px 24px;" href="#">Sign up for free</a>
+</div>
+
+<h2>Feature card</h2>
+<div class="stage">
+  <article style="background: var(--color-surface-primary); border: 1px solid var(--color-neutral-slate-alpha); border-radius: var(--radius-16); padding: var(--space-xlarge); max-width: 24rem;">
+    <img src="../assets/illustrations/solution-donations.svg" style="width: 40px; height: 40px; margin-bottom: var(--space-medium);" alt="">
+    <h3 style="font-family: var(--font-family-heading); font-size: var(--font-size-xl); font-weight: 500; margin: 0 0 var(--space-xxsmall); color: var(--color-text-heading);">Free donation forms</h3>
+    <p style="margin: 0; color: var(--color-text-secondary); font-size: var(--font-size-regular);">Collect one-time and recurring donations with zero platform fees.</p>
+  </article>
+</div>
+</body>
+</html>

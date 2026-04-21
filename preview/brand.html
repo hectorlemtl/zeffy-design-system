@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Zeffy — Brand preview</title>
+  <link rel="stylesheet" href="../tokens/tokens.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap">
+  <style>
+    body { margin: 0; padding: var(--space-xxlarge) var(--space-padding-global); font-family: var(--font-family-body); color: var(--color-text-primary); background: var(--color-surface-muted); }
+    .card { background: var(--color-surface-primary); border-radius: var(--radius-16); padding: var(--space-xlarge); max-width: 48rem; margin: 0 auto; box-shadow: var(--shadow-soft); }
+    .logo { height: 48px; margin-bottom: var(--space-large); }
+    .title { font-family: var(--font-family-heading); font-weight: var(--font-weight-semibold); font-size: var(--font-size-2xl); color: var(--color-text-heading); margin: 0 0 var(--space-xsmall); }
+    .tagline { font-size: var(--font-size-medium-2); color: var(--color-text-secondary); margin: 0 0 var(--space-large); }
+    .swatch-row { display: flex; gap: var(--space-small); margin-bottom: var(--space-large); }
+    .swatch { flex: 1; aspect-ratio: 1; border-radius: var(--radius-12); display: flex; align-items: flex-end; padding: var(--space-xsmall); font-family: ui-monospace, monospace; font-size: var(--font-size-xs); }
+    .voice { background: var(--color-brand-primary-quiet); border-left: 4px solid var(--color-brand-primary); padding: var(--space-medium); border-radius: var(--radius-12); font-style: italic; color: var(--color-brand-primary-darkest); }
+    .illus-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--space-small); margin-top: var(--space-medium); }
+    .illus-row img { width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+<div class="card">
+  <img class="logo" src="../assets/logos/zeffy-logo.svg" alt="Zeffy">
+  <h1 class="title">Zeffy — 100% free fundraising</h1>
+  <p class="tagline">Used and loved by 100,000+ nonprofits. Zero platform fees.</p>
+
+  <div class="swatch-row">
+    <div class="swatch" style="background: #5555e7; color: white;">#5555e7</div>
+    <div class="swatch" style="background: #0f0e5b; color: white;">#0f0e5b</div>
+    <div class="swatch" style="background: #f3f3ff; color: #2a2ac4;">#f3f3ff</div>
+    <div class="swatch" style="background: #09cfaf; color: #0a093d;">#09cfaf</div>
+    <div class="swatch" style="background: #ffb424; color: #0a093d;">#ffb424</div>
+  </div>
+
+  <blockquote class="voice">
+    "All-in-one fundraising platform with zero fees. From donations and ticketing to raffles, auctions, and donor management. Used and loved by over 100,000 nonprofits."
+  </blockquote>
+
+  <div class="illus-row">
+    <img src="../assets/illustrations/solution-donations.svg" alt="">
+    <img src="../assets/illustrations/solution-ticketing.svg" alt="">
+    <img src="../assets/illustrations/solution-auctions.svg" alt="">
+    <img src="../assets/illustrations/solution-memberships.svg" alt="">
+    <img src="../assets/illustrations/solution-crm.svg" alt="">
+    <img src="../assets/illustrations/solution-newsletter.svg" alt="">
+  </div>
+</div>
+</body>
+</html>
