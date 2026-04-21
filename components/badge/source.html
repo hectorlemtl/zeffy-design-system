@@ -1,0 +1,24 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-badge {
+    display: inline-flex; align-items: center; gap: 0.375rem;
+    padding: 4px 10px;
+    border-radius: var(--radius-round);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-wide);
+  }
+  .zf-badge--brand   { background: var(--color-brand-primary-moderate); color: var(--color-brand-primary-dark); }
+  .zf-badge--success { background: var(--color-status-success-surface); color: var(--color-status-success); }
+  .zf-badge--warning { background: #fff4d6; color: var(--color-status-warning); }
+  .zf-badge--danger  { background: var(--color-status-danger-lightest); color: var(--color-status-danger-dark); }
+  .zf-badge--neutral { background: var(--color-surface-muted); color: var(--color-text-secondary); }
+</style>
+
+<span class="zf-badge zf-badge--brand">NEW</span>
+<span class="zf-badge zf-badge--success">Verified</span>
+<span class="zf-badge zf-badge--warning">In review</span>
+<span class="zf-badge zf-badge--danger">Limit exceeded</span>
+<span class="zf-badge zf-badge--neutral">Draft</span>

@@ -1,0 +1,69 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-hero {
+    background: linear-gradient(135deg, var(--color-brand-midnight-3), var(--color-brand-frozen-blue));
+    color: var(--color-text-inverted);
+    padding: var(--space-huge) var(--space-padding-global);
+    font-family: var(--font-family-body);
+  }
+  .zf-hero__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: var(--space-xhuge);
+    align-items: center;
+  }
+  .zf-hero__eyebrow {
+    color: var(--color-text-highlight);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    letter-spacing: var(--letter-spacing-wide);
+    text-transform: uppercase;
+  }
+  .zf-hero__title {
+    font-family: var(--font-family-heading);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-4xl);
+    line-height: var(--line-height-tight);
+    margin: var(--space-medium) 0;
+  }
+  .zf-hero__subtitle {
+    font-size: var(--font-size-medium-2);
+    color: var(--color-text-inverted-secondary);
+    max-width: 32rem;
+  }
+  .zf-hero__cta-row {
+    display: flex; gap: var(--space-medium);
+    margin-top: var(--space-xlarge);
+  }
+  .zf-hero__cta {
+    background: var(--color-brand-primary);
+    color: var(--color-text-inverted);
+    padding: 16px 24px;
+    border-radius: var(--radius-8);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+  }
+  @media (max-width: 992px) {
+    .zf-hero__inner { grid-template-columns: 1fr; }
+    .zf-hero__title { font-size: var(--font-size-3xl); }
+  }
+</style>
+
+<section class="zf-hero">
+  <div class="zf-hero__inner">
+    <div>
+      <div class="zf-hero__eyebrow">100% free fundraising</div>
+      <h1 class="zf-hero__title">All-in-one fundraising platform with zero fees.</h1>
+      <p class="zf-hero__subtitle">From donations and ticketing to raffles, auctions, and donor management. Used and loved by over 100,000 nonprofits.</p>
+      <div class="zf-hero__cta-row">
+        <a class="zf-hero__cta" href="#">Sign up — it&rsquo;s free forever!</a>
+      </div>
+    </div>
+    <div aria-hidden="true">
+      <!-- illustration / Lottie placeholder -->
+    </div>
+  </div>
+</section>

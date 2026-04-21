@@ -1,0 +1,45 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-feature-card {
+    background: var(--color-surface-primary);
+    border: 1px solid var(--color-neutral-slate-alpha);
+    border-radius: var(--radius-16);
+    padding: var(--space-xlarge);
+    box-shadow: var(--shadow-soft);
+    font-family: var(--font-family-body);
+    color: var(--color-text-primary);
+    transition: box-shadow var(--duration-normal) var(--easing-standard);
+  }
+  .zf-feature-card:hover { box-shadow: var(--shadow-raised); }
+  .zf-feature-card__icon { width: 40px; height: 40px; margin-bottom: var(--space-medium); }
+  .zf-feature-card__title {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-snug);
+    margin: 0 0 var(--space-xxsmall);
+    color: var(--color-text-heading);
+  }
+  .zf-feature-card__desc {
+    font-size: var(--font-size-regular);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+    margin: 0;
+  }
+  .zf-feature-card__link {
+    display: inline-block;
+    margin-top: var(--space-medium);
+    color: var(--color-brand-primary-dark);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+  }
+  .zf-feature-card__link:hover { text-decoration: underline; }
+</style>
+
+<article class="zf-feature-card">
+  <img class="zf-feature-card__icon" src="../../assets/illustrations/solution-donations.svg" alt="">
+  <h3 class="zf-feature-card__title">Free donation forms</h3>
+  <p class="zf-feature-card__desc">Collect one-time and recurring donations with zero platform fees, ever.</p>
+  <a class="zf-feature-card__link" href="#">Learn more →</a>
+</article>

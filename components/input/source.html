@@ -1,0 +1,27 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-field { display: flex; flex-direction: column; gap: var(--space-tiny); font-family: var(--font-family-body); max-width: 24rem; }
+  .zf-field__label { font-size: var(--font-size-regular); font-weight: var(--font-weight-medium); color: var(--color-text-primary); }
+  .zf-field__input {
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: var(--radius-8);
+    border: 1px solid var(--color-neutral-slate-alpha);
+    font-size: var(--font-size-medium);
+    color: var(--color-text-primary);
+    background: var(--color-surface-primary);
+    transition: box-shadow var(--duration-fast), border-color var(--duration-fast);
+  }
+  .zf-field__input::placeholder { color: var(--color-neutral-slate-muted); }
+  .zf-field__input:focus { outline: none; border-color: var(--color-brand-primary); box-shadow: var(--shadow-brand-glow); }
+  .zf-field--error .zf-field__input { border-color: var(--color-status-danger); }
+  .zf-field__help { font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+  .zf-field--error .zf-field__help { color: var(--color-status-danger); }
+</style>
+
+<label class="zf-field">
+  <span class="zf-field__label">Email</span>
+  <input class="zf-field__input" type="email" placeholder="you@example.org">
+  <span class="zf-field__help">We&rsquo;ll send a confirmation to this address.</span>
+</label>

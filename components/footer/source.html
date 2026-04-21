@@ -1,0 +1,61 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-footer { background: var(--color-surface-muted); color: var(--color-text-primary); font-family: var(--font-family-body); padding: var(--space-xhuge) var(--space-padding-global) var(--space-xlarge); }
+  .zf-footer__inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 4fr; gap: var(--space-xhuge); }
+  .zf-footer__cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-xlarge); }
+  .zf-footer__heading { text-transform: uppercase; letter-spacing: var(--letter-spacing-wide); color: var(--color-text-secondary); font-weight: var(--font-weight-medium); font-size: var(--font-size-xs); margin: 0 0 var(--space-medium); }
+  .zf-footer__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--space-xsmall); }
+  .zf-footer__link { color: var(--color-text-primary); text-decoration: none; font-size: var(--font-size-regular); }
+  .zf-footer__link:hover { color: var(--color-brand-primary); }
+  .zf-footer__legal { border-top: 1px solid var(--color-neutral-slate-alpha); margin-top: var(--space-xhuge); padding-top: var(--space-large); color: var(--color-text-secondary); font-size: var(--font-size-xs); display: flex; gap: var(--space-medium); }
+</style>
+
+<footer class="zf-footer" role="contentinfo">
+  <div class="zf-footer__inner">
+    <div>
+      <img src="../../assets/logos/zeffy-logo.svg" alt="Zeffy" width="120">
+    </div>
+    <div class="zf-footer__cols">
+      <div>
+        <h4 class="zf-footer__heading">Solutions</h4>
+        <ul class="zf-footer__list">
+          <li><a class="zf-footer__link" href="#">Donations</a></li>
+          <li><a class="zf-footer__link" href="#">Ticketing</a></li>
+          <li><a class="zf-footer__link" href="#">Auctions</a></li>
+          <li><a class="zf-footer__link" href="#">Memberships</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="zf-footer__heading">Resources</h4>
+        <ul class="zf-footer__list">
+          <li><a class="zf-footer__link" href="#">Blog</a></li>
+          <li><a class="zf-footer__link" href="#">Success stories</a></li>
+          <li><a class="zf-footer__link" href="#">Grant finder</a></li>
+          <li><a class="zf-footer__link" href="#">Fundraising ideas</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="zf-footer__heading">About</h4>
+        <ul class="zf-footer__list">
+          <li><a class="zf-footer__link" href="#">Our story</a></li>
+          <li><a class="zf-footer__link" href="#">Careers</a></li>
+          <li><a class="zf-footer__link" href="#">Press</a></li>
+          <li><a class="zf-footer__link" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="zf-footer__heading">Partners</h4>
+        <ul class="zf-footer__list">
+          <li><a class="zf-footer__link" href="#">Partners</a></li>
+          <li><a class="zf-footer__link" href="#">Integrations</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="zf-footer__legal">
+    <span>© Zeffy 2026</span>
+    <a class="zf-footer__link" href="#">Terms</a>
+    <a class="zf-footer__link" href="#">Privacy</a>
+  </div>
+</footer>

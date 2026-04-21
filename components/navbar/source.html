@@ -1,0 +1,46 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-nav {
+    position: sticky; top: 0; z-index: 20;
+    background: var(--color-surface-primary);
+    border-bottom: 1px solid var(--color-neutral-slate-alpha);
+    font-family: var(--font-family-body);
+    color: var(--color-text-primary);
+  }
+  .zf-nav__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem var(--space-padding-global);
+    display: flex; align-items: center; gap: var(--space-xlarge);
+  }
+  .zf-nav__brand img { height: 40px; width: auto; }
+  .zf-nav__links { display: flex; gap: var(--space-large); flex: 1; }
+  .zf-nav__link {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .zf-nav__link:hover { color: var(--color-brand-primary); }
+  .zf-nav__cta {
+    background: var(--color-brand-primary); color: var(--color-text-inverted);
+    padding: 12px 16px; border-radius: var(--radius-8);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+  }
+</style>
+
+<nav class="zf-nav" role="navigation" aria-label="Primary">
+  <div class="zf-nav__inner">
+    <a class="zf-nav__brand" href="/"><img src="../../assets/logos/zeffy-logo.svg" alt="Zeffy"></a>
+    <div class="zf-nav__links">
+      <a class="zf-nav__link" href="#">$0 Pricing</a>
+      <a class="zf-nav__link" href="#" aria-haspopup="menu">Solutions ▾</a>
+      <a class="zf-nav__link" href="#" aria-haspopup="menu">Resources ▾</a>
+      <a class="zf-nav__link" href="#" aria-haspopup="menu">About ▾</a>
+    </div>
+    <a class="zf-nav__link" href="#">Log in</a>
+    <a class="zf-nav__cta" href="#">Sign up for free</a>
+  </div>
+</nav>

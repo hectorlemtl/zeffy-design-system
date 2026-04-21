@@ -1,0 +1,35 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-solution {
+    display: flex; gap: var(--space-small); align-items: flex-start;
+    text-decoration: none; color: var(--color-text-primary);
+    font-family: var(--font-family-body);
+    padding: var(--space-small);
+    border-radius: var(--radius-12);
+    transition: background var(--duration-fast) var(--easing-standard);
+  }
+  .zf-solution:hover { background: var(--color-surface-secondary); }
+  .zf-solution__icon { width: var(--size-icon-40); height: var(--size-icon-40); flex: none; }
+  .zf-solution__title {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+    color: var(--color-text-heading);
+  }
+  .zf-solution:hover .zf-solution__title { color: var(--color-brand-primary); }
+  .zf-solution__desc {
+    font-size: var(--font-size-regular);
+    color: var(--color-text-secondary);
+    margin: var(--space-tiny) 0 0;
+    line-height: var(--line-height-snug);
+  }
+</style>
+
+<a class="zf-solution" href="#">
+  <img class="zf-solution__icon" src="../../assets/illustrations/solution-ticketing.svg" alt="">
+  <div>
+    <h4 class="zf-solution__title">Ticketing</h4>
+    <p class="zf-solution__desc">Sell and manage event tickets with zero fees.</p>
+  </div>
+</a>

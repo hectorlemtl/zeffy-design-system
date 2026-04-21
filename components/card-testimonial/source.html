@@ -1,0 +1,35 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-testimonial {
+    background: var(--color-surface-primary);
+    border-radius: var(--radius-16);
+    padding: var(--space-xlarge);
+    box-shadow: var(--shadow-soft);
+    font-family: var(--font-family-body);
+    color: var(--color-text-primary);
+    max-width: 32rem;
+  }
+  .zf-testimonial__stars { color: var(--color-accent-zesty-orange); margin-bottom: var(--space-small); }
+  .zf-testimonial__quote {
+    font-size: var(--font-size-medium-2);
+    line-height: var(--line-height-relaxed);
+    margin: 0 0 var(--space-large);
+  }
+  .zf-testimonial__author { display: flex; align-items: center; gap: var(--space-small); }
+  .zf-testimonial__avatar { width: 40px; height: 40px; border-radius: var(--radius-round); object-fit: cover; }
+  .zf-testimonial__name { font-weight: var(--font-weight-semibold); }
+  .zf-testimonial__role { color: var(--color-text-secondary); font-size: var(--font-size-regular); }
+</style>
+
+<blockquote class="zf-testimonial">
+  <div class="zf-testimonial__stars" aria-label="5 out of 5 stars">★★★★★</div>
+  <p class="zf-testimonial__quote">&ldquo;We saved thousands of dollars in platform fees in our first year. Our donors give more because 100% reaches the mission.&rdquo;</p>
+  <footer class="zf-testimonial__author">
+    <img class="zf-testimonial__avatar" src="" alt="">
+    <div>
+      <div class="zf-testimonial__name">Ashley Rivera</div>
+      <div class="zf-testimonial__role">Executive Director, Worthy Dog Rescue</div>
+    </div>
+  </footer>
+</blockquote>

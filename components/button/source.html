@@ -1,0 +1,50 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-btn {
+    font-family: var(--font-family-body);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium);
+    line-height: 1.2;
+    padding: 12px 16px;
+    border-radius: var(--radius-8);
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xxsmall);
+    cursor: pointer;
+    transition: background-color var(--duration-fast) var(--easing-standard),
+                color            var(--duration-fast) var(--easing-standard),
+                box-shadow       var(--duration-fast) var(--easing-standard);
+    text-decoration: none;
+  }
+  .zf-btn--primary {
+    background: var(--color-brand-primary);
+    color: var(--color-text-inverted);
+    border-color: var(--color-brand-primary);
+  }
+  .zf-btn--primary:hover { background: var(--color-brand-primary-dark); border-color: var(--color-brand-primary-dark); }
+  .zf-btn--primary:active { background: var(--color-brand-primary-darkest); }
+  .zf-btn--outline {
+    background: transparent;
+    color: var(--color-brand-primary-dark);
+    border-color: var(--color-brand-primary-light);
+  }
+  .zf-btn--outline:hover { background: var(--color-surface-secondary); }
+  .zf-btn--ghost {
+    background: transparent;
+    color: var(--color-text-intense);
+    border-color: transparent;
+  }
+  .zf-btn--ghost:hover { color: var(--color-brand-primary); }
+  .zf-btn--sm { font-size: var(--font-size-regular); padding: 8px 12px; }
+  .zf-btn--lg { font-size: var(--font-size-medium-2); padding: 16px 24px; }
+  .zf-btn:focus-visible { outline: none; box-shadow: var(--shadow-brand-glow); }
+  .zf-btn[disabled], .zf-btn[aria-disabled="true"] { opacity: 0.5; cursor: not-allowed; }
+</style>
+
+<a class="zf-btn zf-btn--primary" href="#">Sign up for free</a>
+<a class="zf-btn zf-btn--outline" href="#">See how it works</a>
+<button class="zf-btn zf-btn--ghost">Learn more</button>
+<a class="zf-btn zf-btn--primary zf-btn--lg" href="#">Start fundraising</a>
+<a class="zf-btn zf-btn--primary zf-btn--sm" href="#">Get started</a>

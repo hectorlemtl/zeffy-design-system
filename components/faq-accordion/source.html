@@ -1,0 +1,21 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-faq { border: 1px solid var(--color-neutral-slate-alpha); border-radius: var(--radius-12); font-family: var(--font-family-body); max-width: 40rem; }
+  .zf-faq__item + .zf-faq__item { border-top: 1px solid var(--color-neutral-slate-alpha); }
+  .zf-faq__q { all: unset; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: var(--space-medium) var(--space-large); font-size: var(--font-size-medium); font-weight: var(--font-weight-semibold); color: var(--color-text-heading); cursor: pointer; }
+  .zf-faq__chevron { transition: transform var(--duration-fast) var(--easing-standard); }
+  .zf-faq__item[open] .zf-faq__chevron { transform: rotate(180deg); }
+  .zf-faq__a { padding: 0 var(--space-large) var(--space-medium); color: var(--color-text-secondary); font-size: var(--font-size-regular); line-height: var(--line-height-normal); }
+</style>
+
+<div class="zf-faq">
+  <details class="zf-faq__item" open>
+    <summary class="zf-faq__q">How is Zeffy 100% free? <span class="zf-faq__chevron">▾</span></summary>
+    <div class="zf-faq__a">Donors are invited to add an optional contribution on top of their gift. That&rsquo;s what funds Zeffy — not fees on your nonprofit.</div>
+  </details>
+  <details class="zf-faq__item">
+    <summary class="zf-faq__q">Do I need a credit card to sign up? <span class="zf-faq__chevron">▾</span></summary>
+    <div class="zf-faq__a">No. You can create an account and start fundraising without entering payment details.</div>
+  </details>
+</div>
