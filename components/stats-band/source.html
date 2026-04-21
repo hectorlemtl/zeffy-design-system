@@ -1,0 +1,30 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-stats { background: var(--color-surface-primary); padding: var(--space-xhuge) var(--space-padding-global); font-family: var(--font-family-body); }
+  .zf-stats__grid { max-width: var(--container-regular); margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-large); }
+  .zf-stats__num { font-family: var(--font-family-heading); font-size: var(--font-size-3xl); font-weight: var(--font-weight-semibold); color: var(--color-brand-primary); line-height: 1; }
+  .zf-stats__label { font-size: var(--font-size-regular); color: var(--color-text-secondary); margin-top: var(--space-xxsmall); }
+  @media (max-width: 768px) { .zf-stats__grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+
+<section class="zf-stats">
+  <div class="zf-stats__grid">
+    <div>
+      <div class="zf-stats__num">100,000+</div>
+      <div class="zf-stats__label">nonprofits using Zeffy</div>
+    </div>
+    <div>
+      <div class="zf-stats__num">$1B+</div>
+      <div class="zf-stats__label">raised on the platform</div>
+    </div>
+    <div>
+      <div class="zf-stats__num">0%</div>
+      <div class="zf-stats__label">in platform fees</div>
+    </div>
+    <div>
+      <div class="zf-stats__num">4.9 / 5</div>
+      <div class="zf-stats__label">average review</div>
+    </div>
+  </div>
+</section>

@@ -22,6 +22,9 @@ Each component lives in its own folder with three files:
 | `input`               | Documented | Text / email fields |
 | `footer`              | Documented | Multi-column link grid |
 | `faq-accordion`       | Documented | Expand / collapse list |
+| `stats-band`          | Documented | 4-up trust numbers (100,000+ / $1B+ / 0% / 4.9) |
+| `logo-cloud`          | Documented | Customer logo grid with grayscale treatment |
+| `hello-bar`           | Documented | Top-of-site announcement strip, dismissible |
 
 ## Conventions
 

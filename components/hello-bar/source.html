@@ -1,0 +1,32 @@
+<!doctype html>
+<link rel="stylesheet" href="../../tokens/tokens.css">
+<style>
+  .zf-hello {
+    background: var(--color-surface-brand-deep);
+    color: var(--color-text-inverted);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-regular);
+    font-weight: var(--font-weight-medium);
+    padding: var(--space-xsmall) var(--space-padding-global);
+    display: flex; justify-content: center; align-items: center; gap: var(--space-small);
+    position: relative;
+  }
+  .zf-hello__text { text-align: center; }
+  .zf-hello__link { color: var(--color-text-highlight); text-decoration: underline; }
+  .zf-hello__close {
+    position: absolute; right: var(--space-medium);
+    background: transparent; border: 0;
+    color: var(--color-text-inverted-secondary);
+    cursor: pointer;
+    font-size: var(--font-size-medium);
+    width: 24px; height: 24px;
+  }
+</style>
+
+<aside class="zf-hello" role="banner" aria-label="Announcement">
+  <div class="zf-hello__text">
+    New — instant payouts for US nonprofits.
+    <a class="zf-hello__link" href="#">See what's new →</a>
+  </div>
+  <button class="zf-hello__close" aria-label="Dismiss announcement">×</button>
+</aside>
