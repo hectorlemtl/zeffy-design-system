@@ -1,0 +1,110 @@
+// Zeffy Design System — SCSS token mirror.
+// Generated from tokens/*.json. Canonical source is DTCG JSON.
+// Use: @use "tokens" as zf;  .btn { color: zf.$color-brand-primary; }
+
+// ---------- Color / brand ----------
+$color-brand-primary:         #5555e7;
+$color-brand-primary-dark:    #2a2ac4;
+$color-brand-primary-darkest: #06006d;
+$color-brand-primary-light:   #bfbfff;
+$color-brand-primary-60:      #8181ff;
+$color-brand-primary-quiet:   #f3f3ff;
+$color-brand-primary-moderate:#e0e0ff;
+$color-brand-midnight-3:      #0f0e5b;
+$color-brand-midnight-2:      #032739;
+$color-brand-frozen-blue:     #1b1bb5;
+$color-brand-heading-ink:     #0a093d;
+
+// ---------- Color / accent ----------
+$color-accent-sea-foam-green: #09cfaf;
+$color-accent-dark-green:     #068a75;
+$color-accent-darkest-green:  #056757;
+$color-accent-light-green:    #84e7d7;
+$color-accent-green-lighter:  #def7f3;
+$color-accent-green-lightest: #f1fffd;
+$color-accent-yellow:         #ffe68e;
+$color-accent-light-yellow:   #ffbf47;
+$color-accent-zesty-orange:   #ffb424;
+$color-accent-darkest-yellow: #664914;
+$color-accent-breezy-blue:    #89b8ff;
+$color-accent-light-blue:     #f8fbfd;
+$color-accent-periwinkle-plum:#803773;
+
+// ---------- Color / status ----------
+$color-status-success:         $color-accent-dark-green;
+$color-status-success-surface: #bae5de;
+$color-status-warning:         #996b16;
+$color-status-danger:          #ed4a55;
+$color-status-danger-strong:   #ff3947;
+$color-status-danger-dark:     #aa262f;
+$color-status-danger-light:    #ffa7ad;
+$color-status-danger-lightest: #fff2f3;
+
+// ---------- Color / neutral ----------
+$color-neutral-white:          #ffffff;
+$color-neutral-ghost:          #f8f8fa;
+$color-neutral-slate-muted:    #88979c;
+$color-neutral-slate:          #314955;
+$color-neutral-slate-strong:   #103442;
+$color-neutral-slate-alpha:    #10344212;
+$color-neutral-text-secondary: #57568c;
+$color-neutral-text-inverted-secondary: #dddde8;
+
+// ---------- Semantic aliases ----------
+$color-surface-primary:   $color-neutral-white;
+$color-surface-secondary: $color-brand-primary-quiet;
+$color-surface-muted:     $color-neutral-ghost;
+$color-surface-brand:     $color-brand-frozen-blue;
+$color-surface-brand-deep:$color-brand-midnight-3;
+
+$color-text-primary:   $color-brand-midnight-3;
+$color-text-heading:   $color-brand-heading-ink;
+$color-text-secondary: $color-neutral-text-secondary;
+$color-text-intense:   $color-brand-primary-dark;
+$color-text-inverted:  $color-neutral-white;
+
+// ---------- Typography ----------
+$font-family-heading: "Poppins", Arial, sans-serif;
+$font-family-body:    "Roboto", Arial, sans-serif;
+
+$font-weight-regular:  400;
+$font-weight-medium:   500;
+$font-weight-semibold: 600;
+
+$font-size-xs:       0.75rem;
+$font-size-sm:       0.8125rem;
+$font-size-regular:  0.875rem;
+$font-size-medium:   1rem;
+$font-size-medium-2: 1.125rem;
+$font-size-lg:       1.25rem;
+$font-size-xl:       1.5rem;
+$font-size-2xl:      1.875rem;
+$font-size-large:    2rem;
+$font-size-3xl:      2.5rem;
+$font-size-4xl:      3.375rem;
+$font-size-5xl:      3.625rem;
+
+// ---------- Spacing ----------
+$space-tiny:     0.25rem;
+$space-xxsmall:  0.5rem;
+$space-xsmall:   0.75rem;
+$space-small:    1rem;
+$space-medium:   1.25rem;
+$space-large:    1.5rem;
+$space-xlarge:   2rem;
+$space-xxlarge:  3rem;
+$space-huge:     4rem;
+$space-xhuge:    6rem;
+$space-xxhuge:   8rem;
+
+// ---------- Radius ----------
+$radius-8:     0.5rem;
+$radius-10:    0.625rem;
+$radius-12:    0.75rem;
+$radius-16:    1rem;
+$radius-round: 9999px;
+
+// ---------- Shadow ----------
+$shadow-soft:   0 2px 8px #10344212;
+$shadow-raised: 0 8px 24px #10344212;
+$shadow-glow:   0 0 0 4px $color-brand-primary-light;
