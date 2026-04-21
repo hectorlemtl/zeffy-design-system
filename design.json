@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "zeffy-design-system",
+  "version": "0.1.0",
+  "brand": {
+    "name": "Zeffy",
+    "company": "Simplyk Inc.",
+    "tagline": "100% free fundraising platform for nonprofits",
+    "url": "https://www.zeffy.com"
+  },
+  "paths": {
+    "designMd":      "DESIGN.md",
+    "tokensDir":     "tokens",
+    "tokensCss":     "tokens/tokens.css",
+    "componentsDir": "components",
+    "assetsDir":     "assets",
+    "docsDir":       "docs"
+  },
+  "tokens": {
+    "format":   "W3C Design Tokens Community Group (DTCG)",
+    "specUrl":  "https://tr.designtokens.org/format/"
+  },
+  "sources": {
+    "marketingSite": "https://www.zeffy.com",
+    "webflowSiteId": "60af7f6d21134db12548f5b9",
+    "extractedAt":   "2026-04-21"
+  },
+  "ingestionHint": "For Claude Design: read DESIGN.md first, then tokens/*.json, then components/*/index.md."
+}
