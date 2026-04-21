@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Zeffy Design System — Styleguide</title>
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;600&display=swap">
+<style>
+  body { margin: 0; font-family: var(--font-family-body); color: var(--color-text-primary); background: var(--color-surface-primary); }
+  .sg-section { padding: var(--space-xxlarge) var(--space-padding-global); max-width: 1200px; margin: 0 auto; }
+  .sg-section + .sg-section { border-top: 1px solid var(--color-neutral-slate-alpha); }
+  h1, h2, h3 { font-family: var(--font-family-heading); color: var(--color-text-heading); }
+  h1 { font-size: var(--font-size-4xl); margin: 0 0 var(--space-medium); }
+  h2 { font-size: var(--font-size-2xl); margin: 0 0 var(--space-large); }
+  h3 { font-size: var(--font-size-lg); margin: var(--space-large) 0 var(--space-small); }
+  .sg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-small); }
+  .sg-swatch { padding: var(--space-medium); border-radius: var(--radius-12); border: 1px solid var(--color-neutral-slate-alpha); background: var(--color-surface-primary); }
+  .sg-swatch__chip { width: 100%; height: 56px; border-radius: var(--radius-8); margin-bottom: var(--space-xsmall); border: 1px solid var(--color-neutral-slate-alpha); }
+  .sg-swatch__name { font-weight: var(--font-weight-medium); font-size: var(--font-size-regular); }
+  .sg-swatch__hex  { font-family: ui-monospace, monospace; color: var(--color-text-secondary); font-size: var(--font-size-xs); }
+  .sg-stack > * + * { margin-top: var(--space-medium); }
+  .sg-label { color: var(--color-text-secondary); font-size: var(--font-size-xs); text-transform: uppercase; letter-spacing: var(--letter-spacing-wide); }
+  .sg-sample-body { max-width: 42rem; }
+  code { background: var(--color-surface-muted); padding: 2px 6px; border-radius: var(--radius-8); font-size: 0.9em; }
+  .sg-spacing-row { display: flex; align-items: flex-end; gap: var(--space-small); }
+  .sg-spacing-cell { background: var(--color-brand-primary); }
+  .sg-spacing-cell__label { text-align: center; font-size: var(--font-size-xs); color: var(--color-text-secondary); margin-top: var(--space-tiny); }
+</style>
+</head>
+<body>
+
+<header class="sg-section">
+  <h1>Zeffy Design System</h1>
+  <p class="sg-sample-body" style="font-size: var(--font-size-medium-2); color: var(--color-text-secondary);">100% free, all-in-one fundraising platform for nonprofits. This styleguide renders every token and core component from the repo in one page, for human reviewers and LLM consumers.</p>
+</header>
+
+<section class="sg-section">
+  <h2>Color — brand</h2>
+  <div class="sg-grid">
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#5555e7"></div><div class="sg-swatch__name">brand.primary</div><div class="sg-swatch__hex">#5555e7</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#2a2ac4"></div><div class="sg-swatch__name">brand.primary-dark</div><div class="sg-swatch__hex">#2a2ac4</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#06006d"></div><div class="sg-swatch__name">brand.primary-darkest</div><div class="sg-swatch__hex">#06006d</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#bfbfff"></div><div class="sg-swatch__name">brand.primary-light</div><div class="sg-swatch__hex">#bfbfff</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#e0e0ff"></div><div class="sg-swatch__name">brand.primary-moderate</div><div class="sg-swatch__hex">#e0e0ff</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#f3f3ff"></div><div class="sg-swatch__name">brand.primary-quiet</div><div class="sg-swatch__hex">#f3f3ff</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#0f0e5b"></div><div class="sg-swatch__name">brand.midnight-3</div><div class="sg-swatch__hex">#0f0e5b</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#1b1bb5"></div><div class="sg-swatch__name">brand.frozen-blue</div><div class="sg-swatch__hex">#1b1bb5</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#0a093d"></div><div class="sg-swatch__name">brand.heading-ink</div><div class="sg-swatch__hex">#0a093d</div></div>
+  </div>
+  <h3>Accent — used in illustrations and callouts, not UI chrome</h3>
+  <div class="sg-grid">
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#09cfaf"></div><div class="sg-swatch__name">accent.sea-foam-green</div><div class="sg-swatch__hex">#09cfaf</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#068a75"></div><div class="sg-swatch__name">accent.dark-green</div><div class="sg-swatch__hex">#068a75</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#ffe68e"></div><div class="sg-swatch__name">accent.yellow</div><div class="sg-swatch__hex">#ffe68e</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#ffb424"></div><div class="sg-swatch__name">accent.zesty-orange</div><div class="sg-swatch__hex">#ffb424</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#89b8ff"></div><div class="sg-swatch__name">accent.breezy-blue</div><div class="sg-swatch__hex">#89b8ff</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#803773"></div><div class="sg-swatch__name">accent.periwinkle-plum</div><div class="sg-swatch__hex">#803773</div></div>
+  </div>
+  <h3>Status</h3>
+  <div class="sg-grid">
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#068a75"></div><div class="sg-swatch__name">status.success</div><div class="sg-swatch__hex">#068a75</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#996b16"></div><div class="sg-swatch__name">status.warning</div><div class="sg-swatch__hex">#996b16</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#ed4a55"></div><div class="sg-swatch__name">status.danger</div><div class="sg-swatch__hex">#ed4a55</div></div>
+    <div class="sg-swatch"><div class="sg-swatch__chip" style="background:#ff3947"></div><div class="sg-swatch__name">status.danger-strong</div><div class="sg-swatch__hex">#ff3947</div></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Typography</h2>
+  <div class="sg-stack">
+    <div><div class="sg-label">Display (Poppins 600 / 58px)</div><div style="font-family: var(--font-family-heading); font-weight: 600; font-size: var(--font-size-5xl); line-height: 1.1;">All-in-one fundraising platform with zero fees.</div></div>
+    <div><div class="sg-label">H1 (Poppins 500 / 54px)</div><div style="font-family: var(--font-family-heading); font-weight: 500; font-size: var(--font-size-4xl); line-height: 1.1;">Raise more, lose nothing to fees</div></div>
+    <div><div class="sg-label">H2 (Poppins 600 / 40px)</div><div style="font-family: var(--font-family-heading); font-weight: 600; font-size: var(--font-size-3xl); line-height: 1.25;">Loved by 100,000+ nonprofits</div></div>
+    <div><div class="sg-label">H3 (Poppins 500 / 30px)</div><div style="font-family: var(--font-family-heading); font-weight: 500; font-size: var(--font-size-2xl); line-height: 1.25;">Donations, ticketing, raffles, auctions</div></div>
+    <div><div class="sg-label">Body-lead (Roboto 400 / 18px)</div><div class="sg-sample-body" style="font-size: var(--font-size-medium-2); line-height: 1.65;">From donations and ticketing to raffles, auctions, and donor management. Used and loved by over 100,000 nonprofits.</div></div>
+    <div><div class="sg-label">Body (Roboto 400 / 16px)</div><div class="sg-sample-body" style="font-size: var(--font-size-medium); line-height: 1.5;">Donors are invited to add an optional contribution on top of their gift. That's what funds Zeffy — not fees on your nonprofit.</div></div>
+    <div><div class="sg-label">Body-small (Roboto 400 / 14px)</div><div class="sg-sample-body" style="font-size: var(--font-size-regular); line-height: 1.5; color: var(--color-text-secondary);">Small caption or helper text sits at 14px in slate-warm #57568c.</div></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Spacing</h2>
+  <div class="sg-spacing-row">
+    <div><div class="sg-spacing-cell" style="width: 4px;  height: 24px;"></div><div class="sg-spacing-cell__label">tiny 4</div></div>
+    <div><div class="sg-spacing-cell" style="width: 8px;  height: 24px;"></div><div class="sg-spacing-cell__label">xxs 8</div></div>
+    <div><div class="sg-spacing-cell" style="width: 12px; height: 24px;"></div><div class="sg-spacing-cell__label">xs 12</div></div>
+    <div><div class="sg-spacing-cell" style="width: 16px; height: 24px;"></div><div class="sg-spacing-cell__label">sm 16</div></div>
+    <div><div class="sg-spacing-cell" style="width: 20px; height: 24px;"></div><div class="sg-spacing-cell__label">md 20</div></div>
+    <div><div class="sg-spacing-cell" style="width: 24px; height: 24px;"></div><div class="sg-spacing-cell__label">lg 24</div></div>
+    <div><div class="sg-spacing-cell" style="width: 32px; height: 24px;"></div><div class="sg-spacing-cell__label">xl 32</div></div>
+    <div><div class="sg-spacing-cell" style="width: 48px; height: 24px;"></div><div class="sg-spacing-cell__label">xxl 48</div></div>
+    <div><div class="sg-spacing-cell" style="width: 64px; height: 24px;"></div><div class="sg-spacing-cell__label">huge 64</div></div>
+    <div><div class="sg-spacing-cell" style="width: 96px; height: 24px;"></div><div class="sg-spacing-cell__label">xhuge 96</div></div>
+    <div><div class="sg-spacing-cell" style="width: 128px; height: 24px;"></div><div class="sg-spacing-cell__label">xxhuge 128</div></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Radii and shadows</h2>
+  <div class="sg-grid">
+    <div class="sg-swatch" style="text-align:center"><div style="background: var(--color-brand-primary); height: 48px; border-radius: var(--radius-8);"></div><div class="sg-swatch__name" style="margin-top: 8px">radius-8</div></div>
+    <div class="sg-swatch" style="text-align:center"><div style="background: var(--color-brand-primary); height: 48px; border-radius: var(--radius-10);"></div><div class="sg-swatch__name" style="margin-top: 8px">radius-10</div></div>
+    <div class="sg-swatch" style="text-align:center"><div style="background: var(--color-brand-primary); height: 48px; border-radius: var(--radius-12);"></div><div class="sg-swatch__name" style="margin-top: 8px">radius-12</div></div>
+    <div class="sg-swatch" style="text-align:center"><div style="background: var(--color-brand-primary); height: 48px; border-radius: var(--radius-16);"></div><div class="sg-swatch__name" style="margin-top: 8px">radius-16</div></div>
+    <div class="sg-swatch" style="text-align:center"><div style="background: var(--color-brand-primary); height: 48px; width: 48px; border-radius: var(--radius-round); margin: 0 auto;"></div><div class="sg-swatch__name" style="margin-top: 8px">radius-round</div></div>
+  </div>
+  <div class="sg-grid" style="margin-top: var(--space-large);">
+    <div class="sg-swatch" style="box-shadow: var(--shadow-soft);"><div class="sg-swatch__name">shadow-soft</div></div>
+    <div class="sg-swatch" style="box-shadow: var(--shadow-raised);"><div class="sg-swatch__name">shadow-raised</div></div>
+    <div class="sg-swatch" style="box-shadow: var(--shadow-brand-glow);"><div class="sg-swatch__name">shadow-brand-glow</div></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Buttons</h2>
+  <div style="display: flex; gap: var(--space-medium); flex-wrap: wrap; align-items: center;">
+    <a style="background: var(--color-brand-primary); color: var(--color-text-inverted); padding: 12px 16px; border-radius: var(--radius-8); font-weight: var(--font-weight-medium); text-decoration: none;" href="#">Sign up for free</a>
+    <a style="background: transparent; color: var(--color-brand-primary-dark); border: 1px solid var(--color-brand-primary-light); padding: 12px 16px; border-radius: var(--radius-8); font-weight: var(--font-weight-medium); text-decoration: none;" href="#">See how it works</a>
+    <a style="background: transparent; color: var(--color-text-intense); padding: 12px 16px; font-weight: var(--font-weight-medium); text-decoration: none;" href="#">Learn more →</a>
+    <a style="background: var(--color-brand-primary); color: var(--color-text-inverted); padding: 16px 24px; border-radius: var(--radius-8); font-size: var(--font-size-medium-2); font-weight: var(--font-weight-medium); text-decoration: none;" href="#">Start fundraising — it's free forever</a>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Badges</h2>
+  <div style="display:flex; gap: var(--space-xsmall); flex-wrap: wrap;">
+    <span style="background: var(--color-brand-primary-moderate); color: var(--color-brand-primary-dark); padding: 4px 10px; border-radius: var(--radius-round); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); letter-spacing: var(--letter-spacing-wide);">NEW</span>
+    <span style="background: #bae5de; color: var(--color-status-success); padding: 4px 10px; border-radius: var(--radius-round); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); letter-spacing: var(--letter-spacing-wide);">Verified</span>
+    <span style="background: #fff4d6; color: var(--color-status-warning); padding: 4px 10px; border-radius: var(--radius-round); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); letter-spacing: var(--letter-spacing-wide);">In review</span>
+    <span style="background: var(--color-status-danger-lightest); color: var(--color-status-danger-dark); padding: 4px 10px; border-radius: var(--radius-round); font-size: var(--font-size-xs); font-weight: var(--font-weight-medium); letter-spacing: var(--letter-spacing-wide);">Limit exceeded</span>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Illustration system</h2>
+  <p class="sg-sample-body" style="color: var(--color-text-secondary);">40px canonical SVG illustrations covering product lines (solutions) and audiences (causes). Full metadata in <code>assets/illustrations/index.json</code>.</p>
+  <div class="sg-grid">
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-donations.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Donations</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-ticketing.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Ticketing</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-auctions.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Auctions</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-memberships.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Memberships</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-crm.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">CRM</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/solution-newsletter.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Newsletter</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/cause-schools.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Schools</div></div>
+    <div class="sg-swatch" style="text-align: center;"><img src="./assets/illustrations/cause-animal-rescues.svg" style="width: 48px; height: 48px;" alt=""><div class="sg-swatch__name" style="margin-top: 8px;">Animal rescues</div></div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -38,15 +38,20 @@ See [`tokens/spacing.json`](./tokens/spacing.json), [`tokens/radius.json`](./tok
 
 ## 5. Components
 
-Twelve core components are documented with markdown specs, zero-dep HTML, and screenshots. See the [`components/`](./components) directory. Start points:
+Fifteen core components are documented with markdown specs, zero-dep HTML, and screenshots. See the [`components/`](./components) directory. Start points:
 
 - [`components/button/`](./components/button/) — primary, outline, ghost.
 - [`components/hero/`](./components/hero/) — split hero with animated word-swap.
+- [`components/stats-band/`](./components/stats-band/) — 4-up trust numbers.
+- [`components/logo-cloud/`](./components/logo-cloud/) — customer logos.
+- [`components/hello-bar/`](./components/hello-bar/) — site-wide announcement strip.
 - [`components/card-feature/`](./components/card-feature/) — icon + title + body.
 - [`components/card-testimonial/`](./components/card-testimonial/) — 5-star customer quote.
 - [`components/callout-cta/`](./components/callout-cta/) — full-width conversion block.
 - [`components/navbar/`](./components/navbar/), [`components/footer/`](./components/footer/).
 - Plus: `input`, `badge`, `faq-accordion`, `card-solution`, `section-layout`.
+
+For example page compositions see [`docs/examples.md`](./docs/examples.md). For an all-in-one visual index, open [`styleguide.html`](./styleguide.html).
 
 ## 6. Illustrations
 

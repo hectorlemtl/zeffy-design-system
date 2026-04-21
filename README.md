@@ -74,6 +74,9 @@ All tokens alias through semantic surface/text layers (e.g., `color.surface.prim
 | input                 | Documented |
 | footer                | Documented |
 | faq-accordion         | Documented |
+| stats-band            | Documented |
+| logo-cloud            | Documented |
+| hello-bar             | Documented |
 
 ## Assets and licensing
 
