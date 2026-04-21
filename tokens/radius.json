@@ -1,0 +1,11 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy corner radii. Based on Webflow --_sizes---radius--* tokens.",
+  "radius": {
+    "8":     { "$value": "0.5rem",   "$type": "dimension", "$description": "8px — inputs, chips" },
+    "10":    { "$value": "0.625rem", "$type": "dimension", "$description": "10px — buttons" },
+    "12":    { "$value": "0.75rem",  "$type": "dimension", "$description": "12px — cards" },
+    "16":    { "$value": "1rem",     "$type": "dimension", "$description": "16px — feature cards, modals" },
+    "round": { "$value": "9999px",   "$type": "dimension", "$description": "Fully rounded (pills, avatars)" }
+  }
+}

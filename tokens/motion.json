@@ -1,0 +1,14 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy motion tokens. Transitions are short and easing is gentle — the brand voice is calm competence, not flashy animation.",
+  "duration": {
+    "fast":   { "$value": "150ms", "$type": "duration", "$description": "Hover, focus" },
+    "normal": { "$value": "250ms", "$type": "duration", "$description": "Default UI transitions" },
+    "slow":   { "$value": "400ms", "$type": "duration", "$description": "Modal, disclosure" }
+  },
+  "easing": {
+    "standard":  { "$value": "cubic-bezier(0.4, 0, 0.2, 1)", "$type": "cubicBezier", "$description": "Default ease-in-out" },
+    "emphasize": { "$value": "cubic-bezier(0.2, 0, 0, 1)",   "$type": "cubicBezier" },
+    "decelerate":{ "$value": "cubic-bezier(0, 0, 0.2, 1)",   "$type": "cubicBezier" }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy elevation tokens. The marketing site uses elevation sparingly — most cards rely on subtle 1px borders and soft brand-tinted shadows rather than Material-style layered drops.",
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": []
+    },
+    "soft": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#10344212",
+          "offsetX": "0",
+          "offsetY": "2px",
+          "blur":    "8px",
+          "spread":  "0"
+        }
+      ],
+      "$description": "Default card elevation"
+    },
+    "raised": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#10344212",
+          "offsetX": "0",
+          "offsetY": "8px",
+          "blur":    "24px",
+          "spread":  "0"
+        }
+      ],
+      "$description": "Hovered card, popovers"
+    },
+    "brand-glow": {
+      "$type": "shadow",
+      "$value": [
+        {
+          "color": "#bfbfff",
+          "offsetX": "0",
+          "offsetY": "0",
+          "blur":    "0",
+          "spread":  "4px"
+        }
+      ],
+      "$description": "Focus ring using {brand.primary-light}"
+    }
+  }
+}

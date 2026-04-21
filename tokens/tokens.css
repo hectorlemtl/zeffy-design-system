@@ -1,0 +1,161 @@
+/**
+ * Zeffy Design System — compiled CSS custom properties.
+ * Generated from tokens/*.json (W3C DTCG format).
+ * Keep in sync via docs/token-provenance.md.
+ */
+
+:root {
+  /* ---------- Color / brand ---------- */
+  --color-brand-primary:         #5555e7;  /* periwinkle — primary CTA */
+  --color-brand-primary-dark:    #2a2ac4;  /* hover / pressed */
+  --color-brand-primary-darkest: #06006d;
+  --color-brand-primary-light:   #bfbfff;  /* focus halo */
+  --color-brand-primary-60:      #8181ff;
+  --color-brand-primary-quiet:   #f3f3ff;  /* section wash */
+  --color-brand-primary-moderate:#e0e0ff;  /* chip bg */
+  --color-brand-midnight-3:      #0f0e5b;  /* default body ink */
+  --color-brand-midnight-2:      #032739;
+  --color-brand-midnight-alpha:  #03273929;
+  --color-brand-frozen-blue:     #1b1bb5;  /* solid hero bg */
+  --color-brand-heading-ink:     #0a093d;
+
+  /* ---------- Color / accent ---------- */
+  --color-accent-sea-foam-green: #09cfaf;
+  --color-accent-dark-green:     #068a75;
+  --color-accent-darkest-green:  #056757;
+  --color-accent-light-green:    #84e7d7;
+  --color-accent-green-lighter:  #def7f3;
+  --color-accent-green-lightest: #f1fffd;
+  --color-accent-yellow:         #ffe68e;
+  --color-accent-light-yellow:   #ffbf47;
+  --color-accent-zesty-orange:   #ffb424;
+  --color-accent-darkest-yellow: #664914;
+  --color-accent-breezy-blue:    #89b8ff;
+  --color-accent-light-blue:     #f8fbfd;
+  --color-accent-light-blue-2:   #b6deeb;
+  --color-accent-periwinkle-plum:#803773;
+
+  /* ---------- Color / status ---------- */
+  --color-status-success:        var(--color-accent-dark-green);
+  --color-status-success-surface:#bae5de;
+  --color-status-warning:        #996b16;
+  --color-status-danger:         #ed4a55;
+  --color-status-danger-strong:  #ff3947;
+  --color-status-danger-dark:    #aa262f;
+  --color-status-danger-light:   #ffa7ad;
+  --color-status-danger-lightest:#fff2f3;
+
+  /* ---------- Color / neutral ---------- */
+  --color-neutral-white:         #ffffff;
+  --color-neutral-ghost:         #f8f8fa;
+  --color-neutral-slate-muted:   #88979c;
+  --color-neutral-slate:         #314955;
+  --color-neutral-slate-strong:  #103442;
+  --color-neutral-slate-alpha:   #10344212;
+  --color-neutral-text-secondary:#57568c;
+  --color-neutral-text-inverted-secondary: #dddde8;
+
+  /* ---------- Color / semantic surface + text ---------- */
+  --color-surface-primary:       var(--color-neutral-white);
+  --color-surface-secondary:     var(--color-brand-primary-quiet);
+  --color-surface-secondary-moderate: var(--color-brand-primary-moderate);
+  --color-surface-muted:         var(--color-neutral-ghost);
+  --color-surface-brand:         var(--color-brand-frozen-blue);
+  --color-surface-brand-deep:    var(--color-brand-midnight-3);
+
+  --color-text-primary:          var(--color-brand-midnight-3);
+  --color-text-heading:          var(--color-brand-heading-ink);
+  --color-text-secondary:        var(--color-neutral-text-secondary);
+  --color-text-intense:          var(--color-brand-primary-dark);
+  --color-text-inverted:         var(--color-neutral-white);
+  --color-text-inverted-secondary: var(--color-neutral-text-inverted-secondary);
+  --color-text-highlight:        #80dcca;
+  --color-text-highlight-2:      #08ac92;
+  --color-text-highlight-3:      var(--color-accent-darkest-green);
+  --color-text-warning:          var(--color-status-danger);
+
+  --color-border-primary:        var(--color-brand-primary);
+  --color-pagination-dots:        var(--color-brand-primary-moderate);
+  --color-pagination-dots-active: var(--color-brand-primary);
+
+  /* ---------- Typography ---------- */
+  --font-family-heading: "Poppins", Arial, sans-serif;
+  --font-family-body:    "Roboto", Arial, sans-serif;
+
+  --font-weight-regular:  400;
+  --font-weight-medium:   500;
+  --font-weight-semibold: 600;
+
+  --font-size-xs:       0.75rem;   /* 12 */
+  --font-size-sm:       0.8125rem; /* 13 */
+  --font-size-regular:  0.875rem;  /* 14 */
+  --font-size-medium:   1rem;      /* 16 */
+  --font-size-medium-2: 1.125rem;  /* 18 */
+  --font-size-lg:       1.25rem;   /* 20 */
+  --font-size-xl:       1.5rem;    /* 24 */
+  --font-size-2xl:      1.875rem;  /* 30 */
+  --font-size-large:    2rem;      /* 32 */
+  --font-size-3xl:      2.5rem;    /* 40 */
+  --font-size-4xl:      3.375rem;  /* 54 */
+  --font-size-5xl:      3.625rem;  /* 58 */
+
+  --line-height-tight:   1.1;
+  --line-height-snug:    1.25;
+  --line-height-normal:  1.5;
+  --line-height-relaxed: 1.65;
+
+  --letter-spacing-tight:  -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide:   0.02em;
+
+  /* ---------- Spacing ---------- */
+  --space-tiny:     0.25rem;
+  --space-xxsmall:  0.5rem;
+  --space-xsmall:   0.75rem;
+  --space-xsmall-2: 0.875rem;
+  --space-small:    1rem;
+  --space-medium:   1.25rem;
+  --space-large:    1.5rem;
+  --space-xlarge:   2rem;
+  --space-xxlarge:  3rem;
+  --space-huge:     4rem;
+  --space-huge-2:   4.5rem;
+  --space-xhuge:    6rem;
+  --space-xxhuge:   8rem;
+  --space-padding-global: 2.5rem;
+
+  --container-regular: 60rem;
+
+  --size-icon-16: 1rem;
+  --size-icon-20: 1.25rem;
+  --size-icon-40: 2.5rem;
+
+  /* ---------- Radius ---------- */
+  --radius-8:     0.5rem;
+  --radius-10:    0.625rem;
+  --radius-12:    0.75rem;
+  --radius-16:    1rem;
+  --radius-round: 9999px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-none:   none;
+  --shadow-soft:   0 2px 8px #10344212;
+  --shadow-raised: 0 8px 24px #10344212;
+  --shadow-brand-glow: 0 0 0 4px var(--color-brand-primary-light);
+
+  /* ---------- Breakpoints (declarative only) ---------- */
+  --bp-mobile:     0;
+  --bp-mobile-lg:  480px;
+  --bp-tablet:     768px;
+  --bp-desktop:    992px;
+  --bp-desktop-lg: 1280px;
+  --bp-desktop-xl: 1440px;
+
+  /* ---------- Motion ---------- */
+  --duration-fast:    150ms;
+  --duration-normal:  250ms;
+  --duration-slow:    400ms;
+  --easing-standard:   cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-emphasize:  cubic-bezier(0.2, 0, 0, 1);
+  --easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+}

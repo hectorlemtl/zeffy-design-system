@@ -1,0 +1,289 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy color tokens. Extracted from the Zeffy marketing site (www.zeffy.com/en-us) via Webflow custom properties. Brand anchor is periwinkle (#5555e7); secondary warm accents (yellow, zesty-orange) and a teal/green scale for success and product illustrations.",
+  "brand": {
+    "primary": {
+      "$value": "#5555e7",
+      "$type": "color",
+      "$description": "Periwinkle — primary CTA, brand link, focus ring"
+    },
+    "primary-dark": {
+      "$value": "#2a2ac4",
+      "$type": "color",
+      "$description": "Hover / pressed state for primary"
+    },
+    "primary-darkest": {
+      "$value": "#06006d",
+      "$type": "color",
+      "$description": "Deepest brand ink, used on backgrounds and over-art"
+    },
+    "primary-light": {
+      "$value": "#bfbfff",
+      "$type": "color",
+      "$description": "Focus halo, subtle brand tint"
+    },
+    "primary-60": {
+      "$value": "#8181ff",
+      "$type": "color"
+    },
+    "primary-quiet": {
+      "$value": "#f3f3ff",
+      "$type": "color",
+      "$description": "Subtle brand surface, section backgrounds"
+    },
+    "primary-moderate": {
+      "$value": "#e0e0ff",
+      "$type": "color",
+      "$description": "Brand chip / badge background"
+    },
+    "midnight-blue-3": {
+      "$value": "#0f0e5b",
+      "$type": "color",
+      "$description": "Text primary on light surfaces, heading color"
+    },
+    "midnight-blue-2": {
+      "$value": "#032739",
+      "$type": "color"
+    },
+    "midnight-blue": {
+      "$value": "#03273929",
+      "$type": "color",
+      "$description": "Midnight blue with alpha, used for decorative overlays"
+    },
+    "frozen-blue": {
+      "$value": "#1b1bb5",
+      "$type": "color",
+      "$description": "Solid brand background for hero/CTA blocks"
+    },
+    "heading-ink": {
+      "$value": "#0a093d",
+      "$type": "color",
+      "$description": "Primary heading color"
+    }
+  },
+  "accent": {
+    "sea-foam-green": {
+      "$value": "#09cfaf",
+      "$type": "color",
+      "$description": "Bright product-success accent (illustrations, check marks)"
+    },
+    "dark-green": {
+      "$value": "#068a75",
+      "$type": "color"
+    },
+    "darkest-green": {
+      "$value": "#056757",
+      "$type": "color"
+    },
+    "light-green": {
+      "$value": "#84e7d7",
+      "$type": "color"
+    },
+    "green-lighter": {
+      "$value": "#def7f3",
+      "$type": "color"
+    },
+    "green-lightest": {
+      "$value": "#f1fffd",
+      "$type": "color"
+    },
+    "yellow": {
+      "$value": "#ffe68e",
+      "$type": "color",
+      "$description": "Warm secondary accent, highlight fills"
+    },
+    "light-yellow": {
+      "$value": "#ffbf47",
+      "$type": "color"
+    },
+    "zesty-orange": {
+      "$value": "#ffb424",
+      "$type": "color",
+      "$description": "Warm attention accent for stars, testimonial flourishes"
+    },
+    "darkest-yellow": {
+      "$value": "#664914",
+      "$type": "color"
+    },
+    "breezy-blue": {
+      "$value": "#89b8ff",
+      "$type": "color"
+    },
+    "light-blue": {
+      "$value": "#f8fbfd",
+      "$type": "color",
+      "$description": "Neutral-cool surface wash"
+    },
+    "light-blue-2": {
+      "$value": "#b6deeb",
+      "$type": "color"
+    },
+    "periwinkle-plum": {
+      "$value": "#803773",
+      "$type": "color",
+      "$description": "Editorial purple used sparingly in illustrations"
+    }
+  },
+  "status": {
+    "success": {
+      "$value": "{accent.dark-green}",
+      "$type": "color"
+    },
+    "success-surface": {
+      "$value": "#bae5de",
+      "$type": "color"
+    },
+    "warning": {
+      "$value": "#996b16",
+      "$type": "color"
+    },
+    "danger": {
+      "$value": "#ed4a55",
+      "$type": "color",
+      "$description": "Destructive / error text"
+    },
+    "danger-strong": {
+      "$value": "#ff3947",
+      "$type": "color",
+      "$description": "Sizzling-red, attention-grabbing error"
+    },
+    "danger-dark": {
+      "$value": "#aa262f",
+      "$type": "color"
+    },
+    "danger-light": {
+      "$value": "#ffa7ad",
+      "$type": "color"
+    },
+    "danger-lightest": {
+      "$value": "#fff2f3",
+      "$type": "color"
+    }
+  },
+  "neutral": {
+    "white": {
+      "$value": "#ffffff",
+      "$type": "color"
+    },
+    "ghost": {
+      "$value": "#f8f8fa",
+      "$type": "color",
+      "$description": "Near-white section background"
+    },
+    "slate-muted": {
+      "$value": "#88979c",
+      "$type": "color",
+      "$description": "Muted body text, captions"
+    },
+    "slate": {
+      "$value": "#314955",
+      "$type": "color"
+    },
+    "slate-strong": {
+      "$value": "#103442",
+      "$type": "color"
+    },
+    "slate-alpha": {
+      "$value": "#10344212",
+      "$type": "color",
+      "$description": "Slate with alpha, used for dividers and over-art"
+    },
+    "text-secondary": {
+      "$value": "#57568c",
+      "$type": "color",
+      "$description": "Secondary body text with brand warmth"
+    },
+    "text-inverted-secondary": {
+      "$value": "#dddde8",
+      "$type": "color"
+    }
+  },
+  "surface": {
+    "primary": {
+      "$value": "{neutral.white}",
+      "$type": "color",
+      "$description": "Default page surface"
+    },
+    "secondary": {
+      "$value": "{brand.primary-quiet}",
+      "$type": "color"
+    },
+    "secondary-moderate": {
+      "$value": "{brand.primary-moderate}",
+      "$type": "color"
+    },
+    "muted": {
+      "$value": "{neutral.ghost}",
+      "$type": "color"
+    },
+    "brand": {
+      "$value": "{brand.frozen-blue}",
+      "$type": "color"
+    },
+    "brand-deep": {
+      "$value": "{brand.midnight-blue-3}",
+      "$type": "color"
+    }
+  },
+  "text": {
+    "primary": {
+      "$value": "{brand.midnight-blue-3}",
+      "$type": "color",
+      "$description": "Default body ink on light surfaces"
+    },
+    "heading": {
+      "$value": "{brand.heading-ink}",
+      "$type": "color"
+    },
+    "secondary": {
+      "$value": "{neutral.text-secondary}",
+      "$type": "color"
+    },
+    "intense": {
+      "$value": "{brand.primary-dark}",
+      "$type": "color",
+      "$description": "Emphasized brand text"
+    },
+    "inverted": {
+      "$value": "{neutral.white}",
+      "$type": "color"
+    },
+    "inverted-secondary": {
+      "$value": "{neutral.text-inverted-secondary}",
+      "$type": "color"
+    },
+    "highlight": {
+      "$value": "#80dcca",
+      "$type": "color",
+      "$description": "Inline highlight on dark surfaces"
+    },
+    "highlight-2": {
+      "$value": "#08ac92",
+      "$type": "color"
+    },
+    "highlight-3": {
+      "$value": "{accent.darkest-green}",
+      "$type": "color"
+    },
+    "warning": {
+      "$value": "{status.danger}",
+      "$type": "color"
+    }
+  },
+  "border": {
+    "primary": {
+      "$value": "{brand.primary}",
+      "$type": "color"
+    }
+  },
+  "pagination": {
+    "dots": {
+      "$value": "{brand.primary-moderate}",
+      "$type": "color"
+    },
+    "dots-active": {
+      "$value": "{brand.primary}",
+      "$type": "color"
+    }
+  }
+}

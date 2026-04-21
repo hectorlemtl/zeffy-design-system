@@ -1,0 +1,12 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy responsive breakpoints. Mirrors Webflow Client-First default breakpoints used by the site.",
+  "breakpoint": {
+    "mobile":      { "$value": "0",      "$type": "dimension", "$description": "0–479px" },
+    "mobile-lg":   { "$value": "480px",  "$type": "dimension", "$description": "480–767px" },
+    "tablet":      { "$value": "768px",  "$type": "dimension", "$description": "768–991px" },
+    "desktop":     { "$value": "992px",  "$type": "dimension", "$description": "992–1279px — design baseline" },
+    "desktop-lg":  { "$value": "1280px", "$type": "dimension", "$description": "1280–1439px" },
+    "desktop-xl":  { "$value": "1440px", "$type": "dimension", "$description": "1440px+" }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://tr.designtokens.org/format/",
+  "$description": "Zeffy spacing scale. Matches Webflow --_layout---spacing--* tokens from the live site.",
+  "spacing": {
+    "tiny":      { "$value": "0.25rem",  "$type": "dimension", "$description": "4px" },
+    "xxsmall":   { "$value": "0.5rem",   "$type": "dimension", "$description": "8px" },
+    "xsmall":    { "$value": "0.75rem",  "$type": "dimension", "$description": "12px" },
+    "xsmall-2":  { "$value": "0.875rem", "$type": "dimension", "$description": "14px" },
+    "small":     { "$value": "1rem",     "$type": "dimension", "$description": "16px" },
+    "medium":    { "$value": "1.25rem",  "$type": "dimension", "$description": "20px" },
+    "large":     { "$value": "1.5rem",   "$type": "dimension", "$description": "24px" },
+    "xlarge":    { "$value": "2rem",     "$type": "dimension", "$description": "32px" },
+    "xxlarge":   { "$value": "3rem",     "$type": "dimension", "$description": "48px" },
+    "huge":      { "$value": "4rem",     "$type": "dimension", "$description": "64px" },
+    "huge-2":    { "$value": "4.5rem",   "$type": "dimension", "$description": "72px" },
+    "xhuge":     { "$value": "6rem",     "$type": "dimension", "$description": "96px" },
+    "xxhuge":    { "$value": "8rem",     "$type": "dimension", "$description": "128px" },
+    "padding-global": {
+      "$value": "2.5rem",
+      "$type": "dimension",
+      "$description": "Outer page gutter"
+    }
+  },
+  "container": {
+    "regular": { "$value": "60rem", "$type": "dimension", "$description": "960px — default content max-width" }
+  },
+  "icon": {
+    "16": { "$value": "1rem",    "$type": "dimension" },
+    "20": { "$value": "1.25rem", "$type": "dimension" },
+    "40": { "$value": "2.5rem",  "$type": "dimension" }
+  }
+}
